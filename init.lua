@@ -240,7 +240,7 @@ require("lazy").setup(
         --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
         --
         --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-        -- { import = 'custom.plugins' },
+        { import = 'custom.plugins' },
         {"tpope/vim-repeat"},
 
         {
@@ -276,7 +276,8 @@ require("lazy").setup(
             event = {"CmdlineEnter"},
             ft = {"go", 'gomod'},
             build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
-        }
+        },
+
     }
 )
 
